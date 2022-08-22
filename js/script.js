@@ -1,4 +1,5 @@
 function updateTemplate() {
+    var checking = ";";
     var emoji = [
         " :yt: ", 
         " :oops: ",
@@ -24,5 +25,5 @@ function updateTemplate() {
     ];
     var textArea = document.getElementById('text'); 
     var textareaHasil = document.getElementById('texthasil');
-    textareaHasil.value= textArea.value + emoji[Math.floor(Math.random() * emoji.length)];
+    textareaHasil.value= textArea.value + emoji[Math.floor(Math.random() * emoji.length)] + checking;
 }
